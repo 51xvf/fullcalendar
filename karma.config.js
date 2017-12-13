@@ -103,6 +103,9 @@ module.exports = function(config) {
 					viewportSize: {
 						width: 1024,
 						height: 768
+					},
+					settings: {
+						webSecurityEnabled: false
 					}
 				}
 			}

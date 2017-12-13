@@ -26,7 +26,7 @@ fdescribe('Google Calendar plugin', function() {
 	afterEach(function() {
 		$.mockjax.clear();
 		$.mockjaxSettings.log = function() { };
-		console.warn = oldConsoleWarn;
+		// console.warn = oldConsoleWarn;
 	});
 
 	fit('request/receives correctly when local timezone', function(done) {
@@ -49,8 +49,8 @@ fdescribe('Google Calendar plugin', function() {
 
 			done();
 		};
-		options.googleCalendarError = function(calendar, message) {
-			console.log('GCAL ERROR', message);
+		options.googleCalendarError = function(xhr, message) {
+			console.log('GCAL ERROR', xhr, message);
 		};
 		$('#cal').fullCalendar(options);
 	});
