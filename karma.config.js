@@ -99,6 +99,7 @@ module.exports = function(config) {
 		customLaunchers: {
 			PhantomJS_custom: {
 				base: 'PhantomJS',
+				flags: ['--disable-web-security'],
 				options: {
 					viewportSize: {
 						width: 1024,
