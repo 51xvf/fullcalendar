@@ -15,12 +15,12 @@ fdescribe('Google Calendar plugin', function() {
 			defaultDate: '2016-11-01'
 		};
 
-		// Intercept calls to console.warn
-		currentWarnArgs = null;
-		oldConsoleWarn = console.warn;
-		console.warn = function() {
-			currentWarnArgs = arguments;
-		};
+		// // Intercept calls to console.warn
+		// currentWarnArgs = null;
+		// oldConsoleWarn = console.warn;
+		// console.warn = function() {
+		// 	currentWarnArgs = arguments;
+		// };
 	});
 
 	afterEach(function() {
